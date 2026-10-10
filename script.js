@@ -6,7 +6,7 @@
 
 /* ================= CONFIGURATION ================= */
 
-const WHATSAPP_NUMBER = "237622222612";
+const WHATSAPP_NUMBER = "237678329439";
 
 const INSTAGRAM_URL =
   "https://www.instagram.com/byso_phiecrochet/";
@@ -783,7 +783,7 @@ function sendWhatsAppOrder(data = {}) {
     createWhatsAppMessage(data);
 
   const url =
-    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    `https://wa.me/678329439?text=${encodeURIComponent(message)}`;
 
   window.open(
     url,
