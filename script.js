@@ -783,7 +783,7 @@ function sendWhatsAppOrder(data = {}) {
     createWhatsAppMessage(data);
 
   const url =
-    `https://wa.me/678329439?text=${encodeURIComponent(message)}`;
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 
   window.open(
     url,
@@ -838,8 +838,7 @@ function setupSocialLinks() {
 
     if (link) {
 
-      link.href =
-        `https://wa.me/${WHATSAPP_NUMBER}`;
+      link.href = `https://wa.me/${WHATSAPP_NUMBER}`;
 
       link.target = "_blank";
       link.rel = "noopener noreferrer";
